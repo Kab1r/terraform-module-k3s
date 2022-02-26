@@ -55,6 +55,11 @@ variable "cidr" {
   }
 }
 
+variable "root_server_ip" {
+  type = string
+  default = null
+}
+
 variable "drain_timeout" {
   description = "The length of time to wait before giving up the node draining. Infinite by default."
   type        = string
